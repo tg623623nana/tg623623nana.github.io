@@ -16,12 +16,12 @@
   <meta name="author" content="Nana Hung">
   <meta name="keywords" content="">
   
-    <meta name="description" content="guidehttps:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;369486197 ssh 相關 查看ssh公鑰 id_rsa_pub: https:&#x2F;&#x2F;blog.csdn.net&#x2F;shog808&#x2F;article&#x2F;details&#x2F;76563136 有出現不屬於任一username: Yes即可，只是因為缺少了known_host文件在&#x2F;.ssh資料夾裡">
+    <meta name="description" content="guide https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;369486197  ssh 相關  查看ssh公鑰 id_rsa_pub: https:&#x2F;&#x2F;blog.csdn.net&#x2F;shog808&#x2F;article&#x2F;details&#x2F;76563136 有出現不屬於任一username: Yes即可，只是因為缺少了known_host文件在&#x2F;.ssh資料夾裡">
 <meta property="og:type" content="article">
 <meta property="og:title" content="gitlab 教學">
 <meta property="og:url" content="http://example.com/2022/09/04/gitlab-teach/index.html">
 <meta property="og:site_name" content="Nana">
-<meta property="og:description" content="guidehttps:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;369486197 ssh 相關 查看ssh公鑰 id_rsa_pub: https:&#x2F;&#x2F;blog.csdn.net&#x2F;shog808&#x2F;article&#x2F;details&#x2F;76563136 有出現不屬於任一username: Yes即可，只是因為缺少了known_host文件在&#x2F;.ssh資料夾裡">
+<meta property="og:description" content="guide https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;p&#x2F;369486197  ssh 相關  查看ssh公鑰 id_rsa_pub: https:&#x2F;&#x2F;blog.csdn.net&#x2F;shog808&#x2F;article&#x2F;details&#x2F;76563136 有出現不屬於任一username: Yes即可，只是因為缺少了known_host文件在&#x2F;.ssh資料夾裡">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-09-05T00:43:34.000Z">
 <meta property="article:modified_time" content="2022-09-05T00:46:07.534Z">
@@ -218,7 +218,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          177 words
+          172 words
         
       </span>
     
@@ -272,10 +272,12 @@
             
               <div class="markdown-body">
                 
-                <h1 id="guide"><a href="#guide" class="headerlink" title="guide"></a>guide</h1><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/369486197">https://zhuanlan.zhihu.com/p/369486197</a></p>
-<h1 id="ssh-相關"><a href="#ssh-相關" class="headerlink" title="ssh 相關"></a>ssh 相關</h1><ul>
+                <h1 id="guide"><a class="markdownIt-Anchor" href="#guide"></a> guide</h1>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/369486197">https://zhuanlan.zhihu.com/p/369486197</a></p>
+<h1 id="ssh-相關"><a class="markdownIt-Anchor" href="#ssh-相關"></a> ssh 相關</h1>
+<ul>
 <li>查看ssh公鑰 id_rsa_pub: <a target="_blank" rel="noopener" href="https://blog.csdn.net/shog808/article/details/76563136">https://blog.csdn.net/shog808/article/details/76563136</a></li>
-<li>有出現不屬於任一username: Yes即可，只是因為缺少了known_host文件在&#x2F;.ssh資料夾裡</li>
+<li>有出現不屬於任一username: Yes即可，只是因為缺少了known_host文件在/.ssh資料夾裡</li>
 </ul>
 
                 
@@ -423,6 +425,12 @@
 
 
   
+
+
+  
+  
+
+
 
 
 
@@ -589,6 +597,40 @@
 
 
   <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.1/es5/tex-mml-chtml.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 
