@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>gitlab 教學</title>
+    <link href="/2022/09/04/gitlab-teach/"/>
+    <url>/2022/09/04/gitlab-teach/</url>
+    
+    <content type="html"><![CDATA[<h1 id="guide"><a href="#guide" class="headerlink" title="guide"></a>guide</h1><p><a href="https://zhuanlan.zhihu.com/p/369486197">https://zhuanlan.zhihu.com/p/369486197</a></p><h1 id="ssh-相關"><a href="#ssh-相關" class="headerlink" title="ssh 相關"></a>ssh 相關</h1><ul><li>查看ssh公鑰 id_rsa_pub: <a href="https://blog.csdn.net/shog808/article/details/76563136">https://blog.csdn.net/shog808/article/details/76563136</a></li><li>有出現不屬於任一username: Yes即可，只是因為缺少了known_host文件在&#x2F;.ssh資料夾裡</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>gitlab</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>github page 教學</title>
+    <link href="/2022/09/04/hello-world-1/"/>
+    <url>/2022/09/04/hello-world-1/</url>
+    
+    <content type="html"><![CDATA[<h1 id="guide"><a href="#guide" class="headerlink" title="guide"></a>guide</h1><ol><li><a href="https://zhuanlan.zhihu.com/p/371995929">https://zhuanlan.zhihu.com/p/371995929</a></li><li><a href="https://www.cnblogs.com/juzaizai/p/14472119.html">https://www.cnblogs.com/juzaizai/p/14472119.html</a></li></ol><h1 id="problems-amp-solve"><a href="#problems-amp-solve" class="headerlink" title="problems &amp; solve"></a>problems &amp; solve</h1><ul><li>hexo – 遠端更新<ol><li>hexo clean</li><li>hexo g -d</li></ol></li><li>hexo – po新文章，遠端不顯示<br>等待(因為更新有延遲)<br>清除緩存 Crtl + F5</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>gitlab</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="/2022/09/04/hello-world/"/>
+    <url>/2022/09/04/hello-world/</url>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>
