@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>231A Lab 1</title>
+    <link href="/2022/09/04/231A-Lab-1/"/>
+    <url>/2022/09/04/231A-Lab-1/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Single-Pendulum"><a href="#Single-Pendulum" class="headerlink" title="Single Pendulum"></a>Single Pendulum</h1><img src=/img/pendulum.jpg width="30%" />]]></content>
+    
+    
+    <categories>
+      
+      <category>231A Experiment Control Design</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>gitlab 教學</title>
     <link href="/2022/09/04/gitlab-teach/"/>
     <url>/2022/09/04/gitlab-teach/</url>
@@ -27,7 +46,7 @@
     <link href="/2022/09/04/hello-world-1/"/>
     <url>/2022/09/04/hello-world-1/</url>
     
-    <content type="html"><![CDATA[<h1 id="guide"><a href="#guide" class="headerlink" title="guide"></a>guide</h1><ol><li><a href="https://zhuanlan.zhihu.com/p/371995929">https://zhuanlan.zhihu.com/p/371995929</a></li><li><a href="https://www.cnblogs.com/juzaizai/p/14472119.html">https://www.cnblogs.com/juzaizai/p/14472119.html</a></li></ol><h1 id="problems-amp-solve"><a href="#problems-amp-solve" class="headerlink" title="problems &amp; solve"></a>problems &amp; solve</h1><ul><li>hexo – 遠端更新<ol><li>hexo clean</li><li>hexo g -d</li></ol></li><li>hexo – po新文章，遠端不顯示<br>等待(因為更新有延遲)<br>清除緩存 Crtl + F5</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="guide"><a href="#guide" class="headerlink" title="guide"></a>guide</h1><ol><li><a href="https://zhuanlan.zhihu.com/p/371995929">https://zhuanlan.zhihu.com/p/371995929</a></li><li><a href="https://www.cnblogs.com/juzaizai/p/14472119.html">https://www.cnblogs.com/juzaizai/p/14472119.html</a></li></ol><h2 id="theme"><a href="#theme" class="headerlink" title="theme"></a>theme</h2><ul><li>next</li><li>fluid<ul><li><a href="https://github.com/fluid-dev/hexo-theme-fluid">https://github.com/fluid-dev/hexo-theme-fluid</a></li><li>Hexo Fluid用戶手冊: <a href="https://fluid-dev.github.io/hexo-fluid-docs/guide/#%E5%85%B3%E4%BA%8E%E6%8C%87%E5%8D%97">https://fluid-dev.github.io/hexo-fluid-docs/guide/#%E5%85%B3%E4%BA%8E%E6%8C%87%E5%8D%97</a></li></ul></li></ul><h1 id="problems-amp-solve"><a href="#problems-amp-solve" class="headerlink" title="problems &amp; solve"></a>problems &amp; solve</h1><ul><li>hexo – 遠端更新<ol><li>hexo clean</li><li>hexo g -d</li></ol></li><li>hexo – po新文章，遠端不顯示<br>等待(因為更新有延遲)<br>清除緩存 Crtl + F5</li></ul>]]></content>
     
     
     <categories>
