@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://tg623623nana.github.io/sitemap.xml
+Sitemap: /sitemap.xml
