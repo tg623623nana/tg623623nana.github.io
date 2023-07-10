@@ -2,19 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://tg623623nana.github.io/categories/</loc>
+  </url><url>
     <loc>https://tg623623nana.github.io/posts/distributed-multi-agents-trajectory-planning-with-games-using-ilqr/</loc>
-    <lastmod>2023-07-10T14:18:53-07:00</lastmod>
-  </url><url>
-    <loc>https://tg623623nana.github.io/</loc>
-    <lastmod>2023-07-10T14:18:53-07:00</lastmod>
-  </url><url>
-    <loc>https://tg623623nana.github.io/posts/</loc>
-    <lastmod>2023-07-10T14:18:53-07:00</lastmod>
   </url><url>
     <loc>https://tg623623nana.github.io/posts/vehicle-dynamic-obstacle-avoidance-project/</loc>
-    <lastmod>2023-07-10T13:22:21-07:00</lastmod>
   </url><url>
-    <loc>https://tg623623nana.github.io/categories/</loc>
+    <loc>https://tg623623nana.github.io/</loc>
+  </url><url>
+    <loc>https://tg623623nana.github.io/posts/</loc>
   </url><url>
     <loc>https://tg623623nana.github.io/tags/</loc>
   </url>

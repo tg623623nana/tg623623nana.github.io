@@ -5,27 +5,23 @@
     <link>https://tg623623nana.github.io/posts/</link>
     <description>Recent content in Posts on Pin Yun Hung</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 10 Jul 2023 14:18:53 -0700</lastBuildDate><atom:link href="https://tg623623nana.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://tg623623nana.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Distributed Multi-Agents Trajectory Planning With Games Using ILQR</title>
       <link>https://tg623623nana.github.io/posts/distributed-multi-agents-trajectory-planning-with-games-using-ilqr/</link>
-      <pubDate>Mon, 10 Jul 2023 14:18:53 -0700</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://tg623623nana.github.io/posts/distributed-multi-agents-trajectory-planning-with-games-using-ilqr/</guid>
-      <description>This project involved implementing potential game theory and an iterative Linear Quadratic Regulator (iLQR) algorithm to address distributed trajectory planning in an interactive model.
-Deadlock Occurrence in Narrow-Way Scenarios In multi-agent narrow-way scenarios, failure to establish communication among agents can lead to deadlocks.
-Resolving the deadlock To tackle the deadlock problem, we introduced two crucial concepts: potential game theory and the safety distance property.
-We formulated the trajectory optimization problem as a potential game, where each agent imagines cooperation from others and predicts their trajectories.</description>
+      <description>Distributed trajectory optimization with imagining potential game and iLQR, modeling the interaction model in intelligent traffic, and solving the deadlock problem.</description>
     </item>
     
     <item>
       <title>Motion Planning for Vehicle Obstacles Avoidance using MPC</title>
       <link>https://tg623623nana.github.io/posts/vehicle-dynamic-obstacle-avoidance-project/</link>
-      <pubDate>Mon, 10 Jul 2023 13:22:21 -0700</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://tg623623nana.github.io/posts/vehicle-dynamic-obstacle-avoidance-project/</guid>
-      <description>PDF : Design of Autonomous Delivery Using Time Optimal MPC Controller with Obstacle Avoidance</description>
+      <description>Solving dynamic obstacle avoidance problems based on Optimization-based Collision Avoidance (OBCA).</description>
     </item>
     
   </channel>
