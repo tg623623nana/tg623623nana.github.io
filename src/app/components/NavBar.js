@@ -1,7 +1,9 @@
+"use client";
 import React from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import Logo from './Logo'
+import {LinkedInIcon, GithubIcon} from './icons'
 
 const CustomLink = ({href, title, className=""}) => {
     const router = useRouter()
@@ -23,20 +25,27 @@ const CustomLink = ({href, title, className=""}) => {
 const NavBar = () => {
     return (
         <header
-        className='w-full px-32 py-8 font-semibold text-lg 
+        className='w-full px-0 py-0 font-semibold text-lg 
         flex items-center justify-end'
         >
             <nav>
-                <Link href="/">Home</Link>
-                <Link href="/about">about</Link>
-                <Link href="/projects">projects</Link>
-                <Link href="/articles">articles</Link>
+                <CustomLink href="/" title="Home" className='mr-4'/>
+                <CustomLink href="/about" title="About" className='mx-4'/>
+                <CustomLink href="/projects" title="Projects" className='mx-4'/>
+                <CustomLink href="/articles" title="Articles" className='ml-4'/>
             </nav>
+
+            {/* <nav className='flex items-center self-center mt-2'>
+                <Link href="https://www.linkedin.com/in/pinyun-hung/" target={"_blank"} className='w-10 mx-3'>
+                    <LinkedInIcon />
+                </Link>
+                <Link href="https://github.com/tg623623nana" target={"_blank"} className='w-12 ml-3'
+                >
+                    <GithubIcon />
+                </Link>
+            </nav> */}
+
             <Logo />
-            <nav>
-                <Link href="/" target='={"_blank"}'>T</Link>
-                <Link href="/" target='={"_blank"}'>T</Link>
-            </nav>
         </header>
     )
 }
