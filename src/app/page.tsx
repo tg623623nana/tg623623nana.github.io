@@ -57,11 +57,11 @@ export default function Home() {
               
               <nav className='flex items-center self-center mt-2'>
                 <Link href="https://www.linkedin.com/in/pinyun-hung/" target={"_blank"} className='w-10 mx-3 pt-1'>
-                    <LinkedInIcon />
+                    <LinkedInIcon className={''}/>
                 </Link>
                 <Link href="https://github.com/tg623623nana" target={"_blank"} className='w-12 ml-3'
                 >
-                    <GithubIcon />
+                    <GithubIcon className={''}/>
                 </Link>
               </nav>
 
