@@ -15,8 +15,10 @@ module.exports = {
       colors:{
         dark: "#1b1b1b",
         light: "#f5f5f5",
-        primary: "#4798B3", // 240,86,199
-        primaryDark: "#58E6D9", // 80,230,217
+        primary: "#4F9D9D", // 240,86,199
+        primaryDark: "#808040", // 80,230,217
+        primaryLight: "#E8E8D0",
+        primaryRed: "#D9006C"
       },
       
       listStyleType: {

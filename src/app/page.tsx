@@ -46,7 +46,7 @@ export default function Home() {
               
               <Link href="/dummy.pdf" target={"_blank"} 
               className='flex items-center bg-dark text-light p-2.5 px-6
-              rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
+              rounded-lg text-lg font-semibold hover:bg-primary hover:text-light
               border-2 border-solid border-transparent hover:border-dark
               mt-3 mx-4
               '

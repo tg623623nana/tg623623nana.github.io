@@ -9,46 +9,47 @@ import {motion, useMotionValue} from "framer-motion"
 
 const FramerImage = motion(Image)
 
-const MovingImg = ({title, img, link}) => {
+const MovingImg = ({title, img, link, summary}) => {
 
   return (
-    <Link href={link} target='_blank'>
+    <Link href={link} target='_blank'> 
+        <div className='grid grid-cols-8 gap-16'>
 
-      <h2 className='capitalize text-xl font-semibold hover:underline'>{title}</h2>
+          <div className='col-span-6 px-6'>
+            <h2 className='capitalize text-2xl mt-8 mb-2 font-semibold hover:underline'>{title}</h2>
+            <p className='text-sm mt-4'>{summary}</p>
+          </div>
 
-      <Image 
-      src={img}
-      alt={title}
-      width={500}
-      height={100}
-      priority
-      className="z-10 w-96 h-auto hidden absolute rounded-lg"
-      
-      />
-    
+          <Image 
+            src={img}
+            alt={title}
+            width={300}
+            height={100}
+            priority
+            className="col-span-2 w-full rounded-lg"
+          />
+        </div>
     </Link>
-
   )
 }
 
-const Article = ({img, title, date, link}) => {
+const Article = ({img, title, date, link, summary}) => {
   return (
     <motion.li 
     initial={{y:200}}
     whileInView={{y:0, transition:{duration:0.5}, ease:"easeInOut"}}
     viewport={{once: true}}
-    className='relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark'>
-      <MovingImg title={title} img={img} link={link}/>
-      <span className='text-primary font-semibold pl-4'>{date}</span>
+    className='relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light  text-dark first:mt-0 border border-solid border-dark'>
+      <MovingImg title={title} img={img} link={link} date={date} summary={summary}/>
     </motion.li>
   )
 }
 
 const FeaturedArticle = ({img, title, summary, link}) => {
   return (
-    <li className='col-span-1 w-full p-4 bg-light 
+    <li className='col-span-1 w-full p-4 bg-primaryLight 
     border border-solid border-dark rounded-2xl'>
-      <Link href={link} target='_blank'
+      <Link href={link}
       className='w-full inline-block cursor-pointer overflow-hidden rounded-lg'
       >
       <FramerImage
@@ -63,10 +64,9 @@ const FeaturedArticle = ({img, title, summary, link}) => {
         />
       </Link>
       
-      <Link href={link} target='_blank'>
+      <Link href={link}>
         <h2 className='capitalize text-2xl font-bold my-2 mt-4 hover:underline'>{title}</h2>
       </Link>
-      <p className='text-sm mb-2'>{summary}</p>
     </li>
   )
 }
@@ -77,47 +77,47 @@ const articles = () => {
     <main>
       <Layout className='py-2'>
         <AnimatedText text='Articles' className='mb-16 !text-6xl'/>
-        <ul className='grid grid-cols-2 gap-16'>
+        {/* <ul className='grid grid-cols-2 gap-16'>
           <FeaturedArticle 
-            title="Vehicle Motion Planning with Obstacles Avoidance using MPC"
-            summary="Solving dynamic obstacle avoidance problems based on Optimization-based Collision Avoidance (OBCA)."
-            img="/home-img4.jpg"
-            link="/"
+            title="Distributed Multi-agent Interaction Modeling without Communication using Games and iLQR"
+            summary="Distributed trajectory optimization with imagined potential game and iLQR, modeling the interaction model in intelligent traffic, and solving the deadlock problem."
+            img="/trajOpt_demo1.png"
+            link="/Distributed-Multi-agents-Trajectory-Planning-with-Imagined-Potential-Game"
           />
 
           <FeaturedArticle 
             title="Vehicle Motion Planning with Obstacles Avoidance using MPC"
             summary="Solving dynamic obstacle avoidance problems based on Optimization-based Collision Avoidance (OBCA)."
-            img="/home-img6.jpg"
-            link="/"
+            img="/OBCA_demo1.png"
+            link="/Vehicle-Motion-Planning-with-Obstacles-Avoidance-using-MPC"
           />
         </ul>
-        <h2 className='font-bold text-4xl w-full text-center my-16 mt-32'>All Articles</h2>
+        <h2 className='font-bold text-4xl w-full text-center my-16 mt-32'>All Articles</h2> */}
 
         <ul>
           <Article 
-            title="Vehicle Motion Planning with Obstacles Avoidance using MPC"
-            img="/home-img4.jpg"
-            date="July 15. 2023"
-            link="/"
+            title="Distributed Multi-agent Interaction Modeling without Communication using Games and iLQR"
+            img="/trajOpt_demo1.png"
+            link="/Distributed-Multi-agents-Trajectory-Planning-with-Imagined-Potential-Game"
+            summary="Distributed trajectory optimization with imagined potential game and iLQR, modeling the interaction model in intelligent traffic, and solving the deadlock problem."
           />
           <Article 
             title="Vehicle Motion Planning with Obstacles Avoidance using MPC"
-            img="/home-img4.jpg"
-            date="July 15. 2023"
-            link="/"
+            img="/OBCA_demo1.png"
+            link="/Vehicle-Motion-Planning-with-Obstacles-Avoidance-using-MPC"
+            summary="Solving dynamic obstacle avoidance problems based on Optimization-based Collision Avoidance (OBCA)."
           />
           <Article 
-            title="Vehicle Motion Planning with Obstacles Avoidance using MPC"
+            title="Self-driving Navigation and Control using ROS"
             img="/home-img4.jpg"
-            date="July 15. 2023"
             link="/"
+            summary=""
           />
           <Article 
-            title="Vehicle Motion Planning with Obstacles Avoidance using MPC"
+            title="IMU signal-processing anaylsis"
             img="/home-img4.jpg"
-            date="July 15. 2023"
             link="/"
+            summary=""
           />
           
         </ul>

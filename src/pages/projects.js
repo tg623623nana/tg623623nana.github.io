@@ -50,15 +50,15 @@ const FeaturedProject = ({title, summary, img, link, github}) => {
 }
 
 
-const Project = ({title, img, link, github}) => {
+const Project = ({title, summary, img, link, github}) => {
   return (
     <article className='"w-full flex flex-col items-center justify-center rounded-2xl
-    border border-solid border-dark bg-light p-6 relative'>
-      <Link href={link} target='_blank'
+    border border-solid border-primaryLight bg-primaryDark p-6 relative'>
+      <Link href={link}
       className='w-full cursor-pointer overflow-hidden rounded-lg'
       >
       <FramerImage
-          className="w-full h-auto"
+          className="w-full h-auto rounded-lg"
           src={img}
           alt={title}
           width={500}
@@ -70,19 +70,66 @@ const Project = ({title, img, link, github}) => {
       </Link>
 
       <div className='w-full flex flex-col items-start justify-between mt-4'>
-        <Link href={link} target='_blank'
-        className='hover:underline underline-offset-2'>
-          <h2 className='my-2 w-full text-left text-3xl font-bold'>{title}</h2>
+        <Link href={link}
+        className='text-light hover:underline underline-offset-2'>
+          <h2 className='my-2 w-full text-left text-2xl font-bold text-light'>{title}</h2>
         </Link>
-        
-        <div className='w-full mt-2 flex items-center justify-end'>
-          <Link href={github} target='_blank' className='w-8'> <GithubIcon /></Link>
-        </div>
+        <p className='font-medium text-light'>{summary}</p>
+        {github}
       </div>
 
     </article>
   )
 }
+
+const ProjectLight = ({title, summary, img, link, github}) => {
+  return (
+    <article className='"w-full flex flex-col items-center justify-center rounded-2xl
+    border-2 border-solid border-primaryDark bg-primaryLight p-6 relative'>
+      <Link href={link}
+      className='w-full cursor-pointer overflow-hidden rounded-lg'
+      >
+      <FramerImage
+          className="w-full h-auto rounded-lg"
+          src={img}
+          alt={title}
+          width={500}
+          height={100}
+          priority
+          whileHover={{scale:1.05}}
+          transition={{duration:0.2}}
+        />
+      </Link>
+
+      <div className='w-full flex flex-col items-start justify-between mt-4'>
+        <Link href={link}
+        className='text-dark hover:underline underline-offset-2'>
+          <h2 className='my-2 w-full text-left text-2xl font-bold text-dark'>{title}</h2>
+        </Link>
+        <p className='font-medium text-dark'>{summary}</p>
+        {github}
+      </div>
+
+    </article>
+  )
+}
+
+const GithubProjectLink = ({github}) => {
+  return (
+    <div className='w-full mt-2 flex items-center justify-end text-primaryDark'>
+      <Link href={github} target='_blank' className='w-8'> <GithubIcon /></Link>
+    </div>
+  )
+}
+
+const GithubProjectLinkLight = ({github}) => {
+  return (
+    <div className='w-full mt-2 flex items-center justify-end text-primaryLight'>
+      <Link href={github} target='_blank' className='w-8'> <GithubIcon /></Link>
+    </div>
+  )
+}
+
 
 const projects = () => {
     return (
@@ -90,33 +137,86 @@ const projects = () => {
         <Layout className='py-2 backy'>
         <AnimatedText text='What I have Done!' className='mb-16 !text-6xl'/>
 
-        <div className='grid grid-col-12 gap-24'>
-          <div className='col-span-12'>
-            <FeaturedProject 
+        <div className='flex container content-center'>
+          <div className='flex w-1/2 px-10'>
+            <Project 
+            title="Distributed Multi-agents Trajectory Planning with Imagined Potential Game"
+            summary="Solving dynamic obstacle avoidance problems based on Optimization-based Collision Avoidance (OBCA)."
+            img="/trajOpt_demo1.png"
+            link="/Distributed-Multi-agents-Trajectory-Planning-with-Imagined-Potential-Game"
+            github={""}
+            />
+          </div>
+          <div className='flex w-1/2 px-10'>
+            <ProjectLight 
             title="Vehicle Motion Planning with Obstacles Avoidance"
             summary="Solving dynamic obstacle avoidance problems based on Optimization-based Collision Avoidance (OBCA)."
-            img="/home-img4.jpg"
+            img="/OBCA_demo1.png"
             link="/Vehicle-Motion-Planning-with-Obstacles-Avoidance-using-MPC"
-            github="/"
-            
+            github={<GithubProjectLink github="https://github.com/tg623623nana/Vehicle_Motion_Planning_with_Obstacles_Avoidance_using_MPC" />}
             />
           </div>
-          <div className='col-span-6'>
-            <Project 
-            title="Vehicle Motion Planning with Obstacles Avoidance"
+        </div>
+
+        <div className='flex container content-center mt-10'>
+          <div className='flex w-1/2  px-10'>
+            <ProjectLight 
+            title="State Estimation for Autonomous Vehicle Tracking with EKF"
             summary="Solving dynamic obstacle avoidance problems based on Optimization-based Collision Avoidance (OBCA)."
-            img="/home-img4.jpg"
-            link="/"
-            github="/"
+            img="/EKF_car.jpg"
+            link="/Vehicle-Motion-Planning-with-Obstacles-Avoidance-using-MPC"
+            github={<GithubProjectLink github="/"/>}
             />
           </div>
-          <div className='col-span-6'>
-            <Project 
-            title="Vehicle Motion Planning with Obstacles Avoidance"
+          <div className='flex w-1/2 px-10'>
+            <Project
+            title="Autonomous Car Racing using Steering Control"
             summary="Solving dynamic obstacle avoidance problems based on Optimization-based Collision Avoidance (OBCA)."
-            img="/home-img4.jpg"
+            img="/BARC_raceline.jpg"
             link="/"
-            github="/"
+            github=""
+            />
+          </div>
+        </div>
+
+        <div className='flex container content-center mt-10'>
+          <div className='flex w-1/2  px-10'>
+            <Project
+            title="Locomotion Controller of A1 Quadrupedal Robot using MPC"
+            summary="Solving dynamic obstacle avoidance problems based on Optimization-based Collision Avoidance (OBCA)."
+            img="/Locomotion_Control_img1.png"
+            link="/Vehicle-Motion-Planning-with-Obstacles-Avoidance-using-MPC"
+            github=""
+            />
+          </div>
+          <div className='flex w-1/2 px-10'>
+            <ProjectLight
+            title="Balance Controller of Agility Robotics’ Cassie"
+            summary="Solving dynamic obstacle avoidance problems based on Optimization-based Collision Avoidance (OBCA)."
+            img="/Cassie_img1.png"
+            link="/"
+            github=""
+            />
+          </div>
+        </div>
+
+        <div className='flex container content-center mt-10'>
+          <div className='flex w-1/2  px-10'>
+            <ProjectLight
+            title="Automated Cell Analyzer using OpenCV and Deep Learning"
+            summary="Solving dynamic obstacle avoidance problems based on Optimization-based Collision Avoidance (OBCA)."
+            img="/AutoCell_img1.png"
+            link="/Vehicle-Motion-Planning-with-Obstacles-Avoidance-using-MPC"
+            github={<GithubProjectLink github=""/>}
+            />
+          </div>
+          <div className='flex w-1/2 px-10'>
+            <Project
+            title="Compensator Design for DC Motor using PID Control"
+            summary="Solving dynamic obstacle avoidance problems based on Optimization-based Collision Avoidance (OBCA)."
+            img="/Motor_control_img1.png"
+            link="/"
+            github=""
             />
           </div>
         </div>

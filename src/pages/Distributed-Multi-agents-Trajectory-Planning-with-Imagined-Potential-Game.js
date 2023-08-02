@@ -77,55 +77,58 @@ const GithubProjectLink = ({github}) => {
 }
 
 
-const VehicleMotionPlanningWithObstaclesAvoidanceUsingMPC = () => {
+const DistributedMultiAgentsTrajectoryPlanningWithImaginedPotentialGame = () => {
     return (
       <main>
         <Layout className='py-2 backy'>
-          <AnimatedText text='Vehicle Motion Planning with Obstacles Avoidance using MPC' className='mb-10 !text-6xl'/>
-
-          <GithubProjectLink github="https://github.com/tg623623nana/Vehicle_Motion_Planning_with_Obstacles_Avoidance_using_MPC" />
+          <AnimatedText text='Distributed Multi-agents Trajectory Planning with Imagined Potential Game' className='mb-16 !text-6xl'/>
 
         <div className='w-full px-40'>
 
-          <Paragraph
-            text="In this project, we implemented the Optimization-based Collision Avoidance (OBCA) algorithm and assumed the existence of a lidar sensor to solve static and dynamic obstacle avoidance problems."/>
+            <Paragraph
+            text="This project involved implementing potential game theory and an iterative Linear Quadratic Regulator (iLQR) algorithm to address distributed trajectory planning in an interactive model."/>
 
+            <h2 className='text-2xl font-bold mt-10'>Deadlock Occurrence in Narrow-Way Scenarios</h2>
+
+            <Paragraph
+            text="In multi-agent narrow-way scenarios, failure to establish communication among agents can lead to deadlocks."/>
+          
             <SingleImg
-              img="/OBCA_demo2.gif"
-              width="800"
-              caption="Vehicle can avoid the dynamic obstacle"
+                img="/trajOpt_demo2.gif"
+                width="500"
+                caption="Deadlock happened in narrow-way interaction scenario"
             />
 
+            <h2 className='text-2xl font-bold mt-10'>Resolving the deadlock</h2>
+
+            <Paragraph
+                text="To tackle the deadlock problem, we introduced two crucial concepts:"/>
+
+            <ul 
+            style={{listStyleType: "disc"}} className="px-10 text-lg">
+                <li className='py-2'>
+                    <b className='text-primaryRed'>                potential game theory  </b>
+                </li>
+
+                <li className='py-2'>
+                    <b className='text-primaryRed'>                safety distance property  </b>
+                </li>
+            </ul>
+            
+
             <SingleImg
-              img="/OBCA_demo2.png"
+              img="/trajOpt_demo1.gif"
               width="500"
-              caption="How the planning change when vehicle see a dynmaic obstacle"
+              caption="Resolved deadlock"
             />
 
             <Paragraph
-              text="Our control strategy involved several steps. Firstly, we acquired obstacle information from the sensor and predicted future obstacle movements. Next, we generated a rough trajectory plan using A* to simplify the problem into a trajectory following task and expedite the solving time of OBCA. Finally, we employed OBCA with model predictive control to solve the trajectory following problem and generate obstacle-free trajectories."/>
-
-            <Paragraph
-              text="To address feasibility issues caused by short prediction horizons, such as when only predicting five time steps into the future in dynamic obstacle scenarios, we treated the sampling time as an optimization variable. This approach helped us avoid infeasible solutions and reduced computation time."/>
-
-            <SingleImg
-              img="/OBCA_MPC.png"
-              width="500"
-              caption="Control strategy based on optimal-based collision avoidance"
-            />
-
-
-            <Paragraph
-              text="You can find more information about the project here:
+              text="We formulated the trajectory optimization problem as a potential game, where each agent imagines cooperation from others and predicts their trajectories. By solving this problem, we obtained a feasible solution that achieved Nash equilibrium. This means that the solution represents the best strategy for all agents in a non-cooperative situation. Furthermore, by assigning different safety distances to each agent, we could generate diverse behaviors in the interactive model.
               "/>
-
-              <Link href="/ME231_Team9_Project_Technical_Report.pdf" 
-              target='_blank'
-              className='text-primary underline'>Design of Autonomous Delivery Using Time Optimal MPC Controller with Obstacle Avoidance</Link>
           </div>
         </Layout>
       </main>
     )
 }
 
-export default VehicleMotionPlanningWithObstaclesAvoidanceUsingMPC
+export default DistributedMultiAgentsTrajectoryPlanningWithImaginedPotentialGame
