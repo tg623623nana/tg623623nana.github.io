@@ -109,7 +109,7 @@ const VehicleMotionPlanningWithObstaclesAvoidanceUsingMPC = () => {
               text="To address feasibility issues caused by short prediction horizons, such as when only predicting five time steps into the future in dynamic obstacle scenarios, we treated the sampling time as an optimization variable. This approach helped us avoid infeasible solutions and reduced computation time."/>
 
             <SingleImg
-              img="/OBCA_MPC.png"
+              img="/OBCA_mpc.png"
               width="500"
               caption="Control strategy based on optimal-based collision avoidance"
             />
