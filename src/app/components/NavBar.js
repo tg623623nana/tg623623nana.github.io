@@ -44,8 +44,9 @@ const NavBar = () => {
                     <GithubIcon />
                 </Link>
             </nav> */}
-
-            <Logo />
+            <div className='px-10'>
+                <Logo />
+            </div>
         </header>
     )
 }
