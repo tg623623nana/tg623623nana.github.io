@@ -33,7 +33,8 @@ export const SingleImg = ({img, width, caption}) => {
 export const TwoImg = ({img1, img2, width, caption}) => {
     return (
       <article>
-        <div className='flex container content-center items-center justify-center gap-10'>
+        <div className='flex container content-center items-center justify-center gap-0
+        md:flex-col'>
           <div className='w-1/2'>
             <Image
               className="w-full rounded-lg  bg-light dark:bg-light"
@@ -47,7 +48,7 @@ export const TwoImg = ({img1, img2, width, caption}) => {
   
           <div className='w-1/2'>
             <Image
-              className="w-full rounded-lg  bg-light dark:bg-light mt-4"
+              className="w-full rounded-lg  bg-light dark:bg-light"
               src={img2}
               alt="Next.js Logo"
               width={width}

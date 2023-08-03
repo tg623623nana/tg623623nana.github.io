@@ -2,13 +2,13 @@ import React from 'react'
 import Link from 'next/link'
 import Layout from '@/app/components/Layout'
 import AnimatedText from '@/app/components/AnimatedText'
-import { SingleImg, Paragraph, GithubProjectLink } from '../app/components/ArticleLayOut'
+import { SingleImg, Paragraph, GithubProjectLink, TwoImg } from '../app/components/ArticleLayOut'
 
 const StateEstimationForAutonomousVehicleTrackingWithEKF = () => {
     return (
       <main>
         <Layout className='py-2 backy'>
-        <AnimatedText text='Article Template' className='mb-10 !text-6xl
+        <AnimatedText text='State Estimation for Autonomous Vehicle Tracking with EKF' className='mb-10 !text-6xl
           lg:!text-5xl md:!text-4xl sm:!text-3xl md:px-2'/>
 
           <GithubProjectLink github="https://github.com/tg623623nana"/>
@@ -16,29 +16,28 @@ const StateEstimationForAutonomousVehicleTrackingWithEKF = () => {
         <div className='w-full px-40 md:px-10'>
 
             <h2 className='text-2xl font-bold mt-10 dark:text-light
-            md:text-xl'>Section Title</h2>
+            md:text-xl'>Simulation v.s Real Word Implementation</h2>
 
             <Paragraph
-            text="show picute like below here"/>
-
-<ul 
-            style={{listStyleType: "disc"}} className="px-10 text-lg dark:text-light md:text-base">
-                <li className='py-2'>
-                    <b className='text-primary dark:text-primaryBlueLight'>                bullet 1  </b>
-                </li>
-
-                <li className='py-2'>
-                    <b className='text-primaryRed dark:text-primaryBlueLight'>                bullet 2  </b>
-                </li>
-            </ul>
+            text="In the simulation, we validated that EKF can give a more precise estimation than measurement, which shows by the compared of green measured position, red EKF estimated position and blue real position"/>
 
             <SingleImg
-                img="/home-img8.jpg"
-                width="500"
-                caption="Picture's Caption"
+                img="/EKF/EKF_img1.png"
+                width="800"
+                caption="simulation v.s real word"
             />
 
-            
+            <SingleImg
+                img="/EKF/mpudata_circle_500dps_340deg_20230430_ekf_comparison.png"
+                width="800"
+                caption="Real vehicle test : mesurement v.s estimation"
+            />
+
+            <SingleImg
+                img="/EKF/mpudata_circle_500dps_340deg_20230430_xypath.png"
+                width="800"
+                caption="Real vehicle test : xy path"
+            />
             
           </div>
         </Layout>

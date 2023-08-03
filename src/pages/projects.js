@@ -85,7 +85,7 @@ const projects = () => {
         <ProjectGroupEvenRow
         title1="State Estimation for Autonomous Vehicle Tracking with EKF"
         summary1="Estimated vehicle position and orientation based on just encoder and IMU."
-        img1="/EKF_car.jpg"
+        img1="/EKF/EKF_car.jpg"
         link1="/State-Estimation-for-Autonomous-Vehicle-Tracking-with-EKF"
         github1={<GithubProjectLinkL2D github="/"/>}
 
