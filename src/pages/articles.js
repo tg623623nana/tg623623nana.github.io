@@ -101,7 +101,7 @@ const articles = () => {
         </ul>
         <h2 className='font-bold text-4xl w-full text-center my-16 mt-32'>All Articles</h2> */}
 
-        <ul className='md:flex md:flex-col md:mx-8'>
+        <ul className='lg:flex lg:flex-col lg:mx-8'>
           <Article 
             title="Distributed Multi-agent Interaction Modeling without Communication using Games and iLQR"
             img="/trajOpt_demo1.png"

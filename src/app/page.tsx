@@ -48,14 +48,6 @@ export default function Home() {
 
           <div className='flex items-center self-center justify-center mt-6 
           lg:self-center'>
-              {/* <Link href="/dummy.pdf" target={"_blank"} className='flex items-center text-dark p-2.5 px-6
-              rounded-lg text-lg font-semibold
-              border-2 border-dark border-solid border-transparent
-              mt-3 mx-4
-              '
-              download={false}
-              >Resume <LinkArrow className={"w-6 ml-1"}/>
-              </Link> */}
               
               <Link href="/Resume_PinYunHung.pdf" target={"_blank"} 
               className='flex items-center bg-dark dark:bg-light text-light dark:text-dark
@@ -67,7 +59,7 @@ export default function Home() {
               md:p-2 md:text-sm
               '
               download={false}
-              >Resume <LinkArrow className={"w-6 ml-1 md:hidden"}/>
+              >Resume
               </Link >
 
               <Link href="mailto:pinyunhung@gmail.com" target={"_blank"}
