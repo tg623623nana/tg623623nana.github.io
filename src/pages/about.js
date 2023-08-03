@@ -3,9 +3,15 @@ import Layout from '@/app/components/Layout'
 import Image from 'next/image'
 import Experience from '@/app/components/Experience'
 import TransitionEffect from '@/app/components/TransitionEffect'
+import Head from 'next/head'
 
 const about = () => {
     return (
+    <>
+    <Head>
+        <title>CodeBucks | About Page</title>
+        <meta name="description" content="any description" />
+    </Head>
     <main className='dark:text-light'>
         {/* <TransitionEffect /> */}
         <Layout className='py-2'>
@@ -73,6 +79,7 @@ const about = () => {
             <Experience />
         </Layout>
     </main>
+    </>
     )
 }
 
