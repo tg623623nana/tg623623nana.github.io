@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { GithubIcon } from '@/app/components/icons'
 import {motion} from "framer-motion"
 import TransitionEffect from '@/app/components/TransitionEffect'
+import Head from 'next/head'
 
 const FramerImage = motion(Image)
 
@@ -148,7 +149,7 @@ const projects = () => {
     return (
       <>
       <Head>
-        <title>Pin Yun Hung | About Page</title>
+        <title>Pin Yun Hung | Projects</title>
         <meta name="description" content="any description" />
       </Head>
       
