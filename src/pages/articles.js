@@ -14,9 +14,10 @@ const MovingImg = ({title, img, link, summary}) => {
 
   return (
     <Link href={link}> 
-        <div className='grid grid-cols-8 gap-16'>
+        <div className='grid grid-cols-8 gap-16 
+        xl:gap-x-16 lg:gap-x-6 md:gap-y-10 sm:gap-x-0'>
 
-          <div className='col-span-6 px-6 dark:text-light lg:col-span-8 md:mr-8 '>
+          <div className='col-span-6 px-6 dark:text-light lg:col-span-8'>
             <h2 className='capitalize text-2xl mt-8 mb-2 font-semibold hover:underline 
             md:text-lg md:mt-0'>{title}</h2>
             <p className='text-sm mt-4 '>{summary}</p>
@@ -100,7 +101,7 @@ const articles = () => {
         </ul>
         <h2 className='font-bold text-4xl w-full text-center my-16 mt-32'>All Articles</h2> */}
 
-        <ul className='px-8'>
+        <ul className='md:flex md:flex-col md:mx-8'>
           <Article 
             title="Distributed Multi-agent Interaction Modeling without Communication using Games and iLQR"
             img="/trajOpt_demo1.png"
