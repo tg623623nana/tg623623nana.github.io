@@ -69,7 +69,7 @@ const Experience = () => {
                         work={
                             <ul 
                             style={{listStyleType: "square"}} className="px-6">
-                                Point Robotics is a startupm=, building surgical robots to save doctor’s operating time of spinal decompression in minimally invasive procedures. I was responsible for developing autonomous drilling and milling control systems for surgical robotics, integrating navigation system, force sensors, planning, and control.
+                                Point Robotics is a startup, building surgical robots to save doctor’s operating time of spinal decompression in minimally invasive procedures. I was responsible for developing autonomous drilling and milling control systems for surgical robotics, integrating navigation system, force sensors, planning, and control.
                                 <li className='my-2 font-medium'>Designed a danger detection algorithm that enables the robot to identify possible penetration while drilling and stop immediately.</li>
                                 <li className='my-2 font-medium'> Developed a stiffness-based fuzzy controller for milling, successfully cleaning the given range and stopping with 2mm thick bone left.</li>
                                 <li className='my-2 font-medium'>  Lead the development of the autonomous system, which transforms the robot system from a collaborative to fully automatic</li>
