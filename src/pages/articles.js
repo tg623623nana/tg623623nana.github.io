@@ -79,6 +79,11 @@ const FeaturedArticle = ({img, title, summary, link}) => {
 
 const articles = () => {
   return (
+    <>
+      <Head>
+        <title>Pin Yun Hung | Articles</title>
+        <meta name="description" content="any description" />
+      </Head>
     <main>
       {/* <TransitionEffect /> */}
       <Layout className='py-2'>
@@ -130,6 +135,7 @@ const articles = () => {
         </ul>
       </Layout>
     </main>
+    </>
   )
 }
 

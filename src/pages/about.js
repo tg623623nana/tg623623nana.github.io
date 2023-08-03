@@ -9,7 +9,7 @@ const about = () => {
     return (
     <>
     <Head>
-        <title>CodeBucks | About Page</title>
+        <title>Pin Yun Hung | About Page</title>
         <meta name="description" content="any description" />
     </Head>
     <main className='dark:text-light'>

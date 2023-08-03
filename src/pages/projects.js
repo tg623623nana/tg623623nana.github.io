@@ -146,6 +146,12 @@ const GithubProjectLinkLight = ({github}) => {
 
 const projects = () => {
     return (
+      <>
+      <Head>
+        <title>Pin Yun Hung | About Page</title>
+        <meta name="description" content="any description" />
+      </Head>
+      
       <main>
         {/* <TransitionEffect /> */}
         <Layout className='py-2 backy'>
@@ -249,6 +255,7 @@ const projects = () => {
         </div>
         </Layout>
       </main>
+      </>
     )
 }
 
