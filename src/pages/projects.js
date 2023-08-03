@@ -5,6 +5,7 @@ import AnimatedText from '@/app/components/AnimatedText'
 import Image from 'next/image'
 import { GithubIcon } from '@/app/components/icons'
 import {motion} from "framer-motion"
+import TransitionEffect from '@/app/components/TransitionEffect'
 
 const FramerImage = motion(Image)
 
@@ -53,7 +54,11 @@ const FeaturedProject = ({title, summary, img, link, github}) => {
 const Project = ({title, summary, img, link, github}) => {
   return (
     <article className='"w-full flex flex-col items-center justify-center rounded-2xl
-    border border-solid border-primaryLight bg-primaryDark p-6 relative'>
+    border-2 border-solid border-primaryLight bg-primaryDark
+    dark:bg-dark
+    p-6 relative
+    md:p-4
+    '>
       <Link href={link}
       className='w-full cursor-pointer overflow-hidden rounded-lg'
       >
@@ -69,12 +74,14 @@ const Project = ({title, summary, img, link, github}) => {
         />
       </Link>
 
-      <div className='w-full flex flex-col items-start justify-between mt-4'>
+      <div className='w-full flex flex-col items-start justify-between mt-4
+      lg:text-lg md:text-base'>
         <Link href={link}
         className='text-light hover:underline underline-offset-2'>
-          <h2 className='my-2 w-full text-left text-2xl font-bold text-light'>{title}</h2>
+          <h2 className='my-2 w-full text-left text-2xl font-bold text-light
+          md:text-lg'>{title}</h2>
         </Link>
-        <p className='font-medium text-light'>{summary}</p>
+        <p className='font-medium text-light md:hidden'>{summary}</p>
         {github}
       </div>
 
@@ -85,7 +92,10 @@ const Project = ({title, summary, img, link, github}) => {
 const ProjectLight = ({title, summary, img, link, github}) => {
   return (
     <article className='"w-full flex flex-col items-center justify-center rounded-2xl
-    border-2 border-solid border-primaryDark bg-primaryLight p-6 relative'>
+    border-2 border-solid border-primaryDark bg-primaryLight 
+    dark:bg-dark dark:border-primaryDark
+    p-6 relative
+    md:p-3'>
       <Link href={link}
       className='w-full cursor-pointer overflow-hidden rounded-lg'
       >
@@ -101,12 +111,15 @@ const ProjectLight = ({title, summary, img, link, github}) => {
         />
       </Link>
 
-      <div className='w-full flex flex-col items-start justify-between mt-4'>
+      <div className='w-full flex flex-col items-start justify-between mt-4
+      lg:text-lg md:text-base'>
         <Link href={link}
-        className='text-dark hover:underline underline-offset-2'>
-          <h2 className='my-2 w-full text-left text-2xl font-bold text-dark'>{title}</h2>
+        className='text-dark dark:text-light hover:underline underline-offset-2'>
+          <h2 className='my-2 w-full text-left text-2xl font-bold text-dark
+          dark:text-light
+          md:text-lg'>{title}</h2>
         </Link>
-        <p className='font-medium text-dark'>{summary}</p>
+        <p className='font-medium text-dark dark:text-light md:hidden'>{summary}</p>
         {github}
       </div>
 
@@ -116,7 +129,7 @@ const ProjectLight = ({title, summary, img, link, github}) => {
 
 const GithubProjectLink = ({github}) => {
   return (
-    <div className='w-full mt-2 flex items-center justify-end text-primaryDark'>
+    <div className='w-full mt-2 flex items-center justify-end text-primaryDark dark:text-light'>
       <Link href={github} target='_blank' className='w-8'> <GithubIcon /></Link>
     </div>
   )
@@ -134,11 +147,15 @@ const GithubProjectLinkLight = ({github}) => {
 const projects = () => {
     return (
       <main>
+        {/* <TransitionEffect /> */}
         <Layout className='py-2 backy'>
-        <AnimatedText text='What I have Done!' className='mb-16 !text-6xl'/>
+        <AnimatedText text='What I have Done!' className='mb-16 !text-6xl
+        lg:!text-5xl md:!text-5xl sm:!text-4xl sm:pt-4'/>
 
-        <div className='flex container content-center'>
-          <div className='flex w-1/2 px-10'>
+        <div className='flex container content-center
+        xl:gap-x-16 lg:gap-x-6 md:gap-y-10 sm:gap-x-0
+        md:flex-col'>
+          <div className='flex w-1/2 px-10 md:w-full md:justify-center'>
             <Project 
             title="Distributed Multi-agents Trajectory Planning with Imagined Potential Game"
             summary="Solving dynamic obstacle avoidance problems based on Optimization-based Collision Avoidance (OBCA)."
@@ -147,7 +164,7 @@ const projects = () => {
             github={""}
             />
           </div>
-          <div className='flex w-1/2 px-10'>
+          <div className='flex w-1/2 px-10 md:w-full md:justify-center'>
             <ProjectLight 
             title="Vehicle Motion Planning with Obstacles Avoidance"
             summary="Solving dynamic obstacle avoidance problems based on Optimization-based Collision Avoidance (OBCA)."
@@ -158,8 +175,11 @@ const projects = () => {
           </div>
         </div>
 
-        <div className='flex container content-center mt-10'>
-          <div className='flex w-1/2  px-10'>
+        <div className='flex container content-center mt-10
+        xl:gap-x-16 lg:gap-x-6 md:gap-y-10 sm:gap-x-0
+        md:flex-col'>
+          <div className='flex w-1/2  px-10 md:w-full
+          md:order-2 md:justify-center'>
             <ProjectLight 
             title="State Estimation for Autonomous Vehicle Tracking with EKF"
             summary="Solving dynamic obstacle avoidance problems based on Optimization-based Collision Avoidance (OBCA)."
@@ -168,7 +188,8 @@ const projects = () => {
             github={<GithubProjectLink github="/"/>}
             />
           </div>
-          <div className='flex w-1/2 px-10'>
+          <div className='flex w-1/2 px-10 md:w-full
+          md:order-1 md:justify-center'>
             <Project
             title="Autonomous Car Racing using Steering Control"
             summary="Solving dynamic obstacle avoidance problems based on Optimization-based Collision Avoidance (OBCA)."
@@ -179,8 +200,10 @@ const projects = () => {
           </div>
         </div>
 
-        <div className='flex container content-center mt-10'>
-          <div className='flex w-1/2  px-10'>
+        <div className='flex container content-center mt-10
+        xl:gap-x-16 lg:gap-x-6 md:gap-y-10 sm:gap-x-0
+        md:flex-col'>
+          <div className='flex w-1/2  px-10 md:w-full  md:justify-center'>
             <Project
             title="Locomotion Controller of A1 Quadrupedal Robot using MPC"
             summary="Solving dynamic obstacle avoidance problems based on Optimization-based Collision Avoidance (OBCA)."
@@ -189,7 +212,7 @@ const projects = () => {
             github=""
             />
           </div>
-          <div className='flex w-1/2 px-10'>
+          <div className='flex w-1/2 px-10 md:w-full  md:justify-center'>
             <ProjectLight
             title="Balance Controller of Agility Robotics’ Cassie"
             summary="Solving dynamic obstacle avoidance problems based on Optimization-based Collision Avoidance (OBCA)."
@@ -200,8 +223,11 @@ const projects = () => {
           </div>
         </div>
 
-        <div className='flex container content-center mt-10'>
-          <div className='flex w-1/2  px-10'>
+        <div className='flex container content-center mt-10
+        xl:gap-x-16 lg:gap-x-6 md:gap-y-10 sm:gap-x-0
+        md:flex-col'>
+          <div className='flex w-1/2  px-10 md:w-full
+          md:order-2  md:justify-center'>
             <ProjectLight
             title="Automated Cell Analyzer using OpenCV and Deep Learning"
             summary="Solving dynamic obstacle avoidance problems based on Optimization-based Collision Avoidance (OBCA)."
@@ -210,7 +236,8 @@ const projects = () => {
             github={<GithubProjectLink github=""/>}
             />
           </div>
-          <div className='flex w-1/2 px-10'>
+          <div className='flex w-1/2 px-10 md:w-full
+          md:order-1  md:justify-center'>
             <Project
             title="Compensator Design for DC Motor using PID Control"
             summary="Solving dynamic obstacle avoidance problems based on Optimization-based Collision Avoidance (OBCA)."

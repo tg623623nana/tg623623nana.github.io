@@ -3,89 +3,24 @@ import Link from 'next/link'
 import Layout from '@/app/components/Layout'
 import AnimatedText from '@/app/components/AnimatedText'
 import Image from 'next/image'
-import { GithubIcon } from '@/app/components/icons'
+
 import {motion} from "framer-motion"
+import { SingleImg, Paragraph, GithubProjectLink } from '../app/components/ArticleLayOut'
 
 const FramerImage = motion(Image)
 /* bg-dark p-1 border border-solid border-dark*/
 
-const SingleImg = ({img, width, caption}) => {
-  return (
-    <article>
-      <div className='w-full flex items-center justify-center mt-10'>
-        
-        <Image
-          className="relative rounded-lg  bg-light"
-          src={img}
-          alt={caption}
-          width={width}
-          height={300}
-          priority
-        />
-      </div>
-    <p className='w-full items-center text-center justify-center text-primaryDark font-semibold mb-10 px-24'>{caption}</p>
-    </article>
-
-  )
-}
-
-const TwoImg = ({img1, img2, width, caption}) => {
-  return (
-    <article>
-      <div className='flex container content-center items-center justify-center gap-10'>
-        <div className='w-1/2'>
-          <Image
-            className="w-full rounded-lg  bg-light"
-            src={img1}
-            alt="Next.js Logo"
-            width={width}
-            height={300}
-            priority
-          />
-        </div>
-
-        <div className='w-1/2'>
-          <Image
-            className="w-full rounded-lg  bg-light  mt-4"
-            src={img2}
-            alt="Next.js Logo"
-            width={width}
-            height={300}
-            priority
-          />
-        </div>
-      </div>
-    <p className='items-center text-center justify-center text-primaryDark font-semibold text-lg mb-10'>{caption}</p>
-    </article>
-  )
-}
-
-const Paragraph = ({text}) => {
-  return (
-    <p className='my-4 text-lg'>
-      {text}
-    </p>
-  )
-}
-
-const GithubProjectLink = ({github}) => {
-  return (
-    <div className='w-full mb-6 flex items-center justify-center text-dark'>
-      <Link href={github} target='_blank' className='w-16'> <GithubIcon /></Link>
-    </div>
-  )
-}
-
 
 const VehicleMotionPlanningWithObstaclesAvoidanceUsingMPC = () => {
     return (
-      <main>
+      <main className='dark:text-light'>
         <Layout className='py-2 backy'>
-          <AnimatedText text='Vehicle Motion Planning with Obstacles Avoidance using MPC' className='mb-10 !text-6xl'/>
+          <AnimatedText text='Vehicle Motion Planning with Obstacles Avoidance using MPC' className='mb-10 !text-6xl
+          lg:!text-5xl md:!text-4xl sm:!text-3xl md:px-2'/>
 
-          <GithubProjectLink github="https://github.com/tg623623nana/Vehicle_Motion_Planning_with_Obstacles_Avoidance_using_MPC" />
+          <GithubProjectLink github="https://github.com/tg623623nana/Vehicle_Motion_Planning_with_Obstacles_Avoidance_using_MPC"/>
 
-        <div className='w-full px-40'>
+        <div className='w-full px-40 md:px-10'>
 
           <Paragraph
             text="In this project, we implemented the Optimization-based Collision Avoidance (OBCA) algorithm and assumed the existence of a lidar sensor to solve static and dynamic obstacle avoidance problems."/>
@@ -121,7 +56,9 @@ const VehicleMotionPlanningWithObstaclesAvoidanceUsingMPC = () => {
 
               <Link href="/ME231_Team9_Project_Technical_Report.pdf" 
               target='_blank'
-              className='text-primary underline'>Design of Autonomous Delivery Using Time Optimal MPC Controller with Obstacle Avoidance</Link>
+              className='text-primary dark:text-primaryBlueLight underline '>Design of Autonomous Delivery Using Time Optimal MPC Controller with Obstacle Avoidance</Link>
+
+              <p className='mb-10'></p>
           </div>
         </Layout>
       </main>

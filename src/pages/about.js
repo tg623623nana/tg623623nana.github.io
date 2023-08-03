@@ -2,15 +2,21 @@ import React from 'react'
 import Layout from '@/app/components/Layout'
 import Image from 'next/image'
 import Experience from '@/app/components/Experience'
+import TransitionEffect from '@/app/components/TransitionEffect'
 
 const about = () => {
     return (
-    <main>
-        <Layout className='py-2 backy'>
+    <main className='dark:text-light'>
+        {/* <TransitionEffect /> */}
+        <Layout className='py-2'>
             
-            <div className='grid w-full grid-cols-6 gap-16 px-24 '>
+            <div className='grid w-full grid-cols-6 gap-16 px-24 md:gap-8 md:px-16'>
                 
-                <div className='col-span-4 flex flex-col items-start justify-start text-lg'>
+                <div className='col-span-4 flex flex-col items-start justify-start text-lg
+                lg:col-span-6
+                lg:order-2
+                md:text-lg sm:text-base xs:text-sm
+                '>
                     <h1 className='w-full pt-4 pb-10 flex items-center justify-center text-center text-4xl font-bold'>About Me</h1>
                     <p className='my-2 font-medium'>
                         I am a Master’s of Engineering graduate from UC Berkeley in Mechanical Engineering, specializing in robotics and autonomous systems control. 
@@ -26,7 +32,8 @@ const about = () => {
                     </p>
 
                     <div>
-                        <h2 className='my-4 text-lg font-bold uppercase text-dark/75'>Education</h2>
+                        <h2 className='my-4 text-2xl font-bold uppercase
+                         text-dark/75 dark:text-light'>Education</h2>
                             <ul 
                             style={{listStyleType: "square"}} className="px-6">
                                 <li className='font-bold'>MEng in Mechanical Engineering, </li>
@@ -40,23 +47,28 @@ const about = () => {
 
                 <div className='my-24 col-span-2 relative h-max 
                 border border-solid border-dark bg-dark p-3 rounded-[2rem]
+                dark:border-light
+                lg:col-span-6
+                lg:order-1
+                lg:my-10
                 '>
-                    <div className='px-2 py-2 rounded-[2rem] bg-light'>
+                    <div className='px-2 py-2 rounded-[2rem] bg-light
+                    dark:bg-dark
+                    '>
                     <Image
-                        className="relative rounded-lg"
+                        className="w-full h-auto rounded-lg"
                         src="/home-img8.jpg"
                         alt="Next.js Logo"
-                        width={500}
-                        height={300}
+                        width="0"
+                        height="0"
                         priority
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                         />
 
                     </div>
                 </div>
                 
             </div>
-
-            
 
             <Experience />
         </Layout>

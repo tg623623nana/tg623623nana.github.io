@@ -6,18 +6,20 @@ import Layout from '@/app/components/Layout'
 import AnimatedText from '@/app/components/AnimatedText'
 import Image from 'next/image'
 import {motion, useMotionValue} from "framer-motion"
+import TransitionEffect from '@/app/components/TransitionEffect'
 
 const FramerImage = motion(Image)
 
 const MovingImg = ({title, img, link, summary}) => {
 
   return (
-    <Link href={link} target='_blank'> 
+    <Link href={link}> 
         <div className='grid grid-cols-8 gap-16'>
 
-          <div className='col-span-6 px-6'>
-            <h2 className='capitalize text-2xl mt-8 mb-2 font-semibold hover:underline'>{title}</h2>
-            <p className='text-sm mt-4'>{summary}</p>
+          <div className='col-span-6 px-6 dark:text-light lg:col-span-8 md:mr-8 '>
+            <h2 className='capitalize text-2xl mt-8 mb-2 font-semibold hover:underline 
+            md:text-lg md:mt-0'>{title}</h2>
+            <p className='text-sm mt-4 '>{summary}</p>
           </div>
 
           <Image 
@@ -26,7 +28,7 @@ const MovingImg = ({title, img, link, summary}) => {
             width={300}
             height={100}
             priority
-            className="col-span-2 w-full rounded-lg"
+            className="col-span-2 w-full rounded-lg lg:hidden"
           />
         </div>
     </Link>
@@ -39,7 +41,9 @@ const Article = ({img, title, date, link, summary}) => {
     initial={{y:200}}
     whileInView={{y:0, transition:{duration:0.5}, ease:"easeInOut"}}
     viewport={{once: true}}
-    className='relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light  text-dark first:mt-0 border border-solid border-dark'>
+    className='relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light  text-dark first:mt-0 border border-solid border-dark
+    dark:bg-dark dark:border-light
+    md:px-2'>
       <MovingImg title={title} img={img} link={link} date={date} summary={summary}/>
     </motion.li>
   )
@@ -75,8 +79,10 @@ const FeaturedArticle = ({img, title, summary, link}) => {
 const articles = () => {
   return (
     <main>
+      {/* <TransitionEffect /> */}
       <Layout className='py-2'>
-        <AnimatedText text='Articles' className='mb-16 !text-6xl'/>
+        <AnimatedText text='Articles' className='mb-16 !text-6xl
+        lg:!text-5xl md:!text-5xl sm:!text-4xl sm:pt-4 md:mb-10'/>
         {/* <ul className='grid grid-cols-2 gap-16'>
           <FeaturedArticle 
             title="Distributed Multi-agent Interaction Modeling without Communication using Games and iLQR"
@@ -94,7 +100,7 @@ const articles = () => {
         </ul>
         <h2 className='font-bold text-4xl w-full text-center my-16 mt-32'>All Articles</h2> */}
 
-        <ul>
+        <ul className='px-8'>
           <Article 
             title="Distributed Multi-agent Interaction Modeling without Communication using Games and iLQR"
             img="/trajOpt_demo1.png"
