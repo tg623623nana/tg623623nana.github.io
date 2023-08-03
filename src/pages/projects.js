@@ -150,7 +150,7 @@ const projects = () => {
       <>
       <Head>
         <title>Pin Yun Hung | Projects</title>
-        <meta name="description" content="any description" />
+        <meta name="projects" content="Pin Yun Hung's portfolio" />
       </Head>
       
       <main>

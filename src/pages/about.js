@@ -9,8 +9,8 @@ const about = () => {
     return (
     <>
     <Head>
-        <title>Pin Yun Hung | About Page</title>
-        <meta name="description" content="any description" />
+        <title>Pin Yun Hung | About </title>
+        <meta name="about" content="Pin Yun Hung's portfolio"/>
     </Head>
     <main className='dark:text-light'>
         {/* <TransitionEffect /> */}

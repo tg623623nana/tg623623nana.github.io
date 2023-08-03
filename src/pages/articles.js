@@ -83,7 +83,7 @@ const articles = () => {
     <>
       <Head>
         <title>Pin Yun Hung | Articles</title>
-        <meta name="description" content="any description" />
+        <meta name="articles" content="Pin Yun Hung's portfolio" />
       </Head>
     <main>
       {/* <TransitionEffect /> */}
