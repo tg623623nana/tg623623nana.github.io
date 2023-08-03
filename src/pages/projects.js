@@ -160,8 +160,7 @@ const projects = () => {
         lg:!text-5xl md:!text-5xl sm:!text-4xl sm:pt-4'/>
 
         <div className='flex container content-center
-        xl:gap-x-16 lg:gap-x-6 md:gap-y-10 sm:gap-x-0
-        md:flex-col'>
+         md:flex-col md:gap-10'>
           <div className='flex w-1/2 px-10 md:w-full md:justify-center'>
             <Project 
             title="Distributed Multi-agents Trajectory Planning with Imagined Potential Game"
@@ -183,8 +182,7 @@ const projects = () => {
         </div>
 
         <div className='flex container content-center mt-10
-        xl:gap-x-16 lg:gap-x-6 md:gap-y-10 sm:gap-x-0
-        md:flex-col'>
+        md:flex-col md:gap-10'>
           <div className='flex w-1/2  px-10 md:w-full
           md:order-2 md:justify-center'>
             <ProjectLight 
@@ -208,8 +206,7 @@ const projects = () => {
         </div>
 
         <div className='flex container content-center mt-10
-        xl:gap-x-16 lg:gap-x-6 md:gap-y-10 sm:gap-x-0
-        md:flex-col'>
+        md:flex-col md:gap-10'>
           <div className='flex w-1/2  px-10 md:w-full  md:justify-center'>
             <Project
             title="Locomotion Controller of A1 Quadrupedal Robot using MPC"
@@ -231,8 +228,7 @@ const projects = () => {
         </div>
 
         <div className='flex container content-center mt-10
-        xl:gap-x-16 lg:gap-x-6 md:gap-y-10 sm:gap-x-0
-        md:flex-col'>
+        md:flex-col md:gap-10'>
           <div className='flex w-1/2  px-10 md:w-full
           md:order-2  md:justify-center'>
             <ProjectLight
