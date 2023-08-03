@@ -7,6 +7,7 @@ import AnimatedText from '@/app/components/AnimatedText'
 import Image from 'next/image'
 import {motion, useMotionValue} from "framer-motion"
 import TransitionEffect from '@/app/components/TransitionEffect'
+import Head from 'next/head'
 
 const FramerImage = motion(Image)
 
