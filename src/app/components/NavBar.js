@@ -98,7 +98,7 @@ const NavBar = () => {
 
                 <motion.div 
                 initial={{scale:0, opacity:0, x:"-50%", y:"-50%"}}
-                animate={{scale:1, opacity:1}}
+                animate={{scale:1, opacity:1, }}
                 className='min-w-[70vw] flex text-center justify-center item-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
             bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32'>
                     <nav className='flex item-center flex-col justify-center'>
@@ -108,7 +108,8 @@ const NavBar = () => {
                         <CustomMobileLink href="/articles" title="Articles" className=''toggle={handleClick}/>
                         <button
                         onClick={() => setMode(mode === "light" ? "dark" : "light")}
-                        className={`mr-auto ml-auto items-center  justify-center rounded-full p-1 mt-2
+                        className={`max-w-[6vw] mr-auto ml-auto items-center  justify-center rounded-full p-1 mt-2
+
                         ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
                         >
                         {
