@@ -55,7 +55,7 @@ const LocomotionControllerOfA1QuadrupedalRobotUsingMPC = () => {
             caption='A1 walking demo'
             />
 
-            {/* <Paragraph 
+            <Paragraph 
             text="To check the stability of the controller, I tested a strategy that the x-axis velocity reference will increase when the robot finds that it is walking too slowly, and the controller handles the changing of the velocity from 0.5 to 2.0 pretty well!."/>
 
             <VedioMP4
@@ -74,7 +74,7 @@ const LocomotionControllerOfA1QuadrupedalRobotUsingMPC = () => {
             <h2 className='text-2xl font-bold mt-10 dark:text-light
             md:text-xl'>Reference</h2>
 
-            <ul 
+            {/* <ul 
             style={{listStyleType: "decimal"}} className='px-10 text-base dark:text-light md:!text-sm text-dark/75
             dark:text-light/75'>
                 <li className='py-2'>
