@@ -33,9 +33,9 @@ export const SingleImg = ({img, width, caption}) => {
 export const TwoImg = ({img1, img2, width, caption}) => {
     return (
       <article>
-        <div className='flex container content-center items-center justify-center gap-0
+        <div className='flex container content-center items-center justify-center gap-2
         md:flex-col'>
-          <div className='w-1/2'>
+          <div className='w-1/2 md:w-full'>
             <Image
               className="w-full rounded-lg  bg-light dark:bg-light"
               src={img1}
@@ -46,7 +46,7 @@ export const TwoImg = ({img1, img2, width, caption}) => {
             />
           </div>
   
-          <div className='w-1/2'>
+          <div className='w-1/2 md:w-full'>
             <Image
               className="w-full rounded-lg  bg-light dark:bg-light"
               src={img2}
@@ -63,6 +63,23 @@ export const TwoImg = ({img1, img2, width, caption}) => {
     )
 }
   
+export const VedioMP4 = ({mp4, width, caption}) => {
+  return (
+  <article>
+    <video 
+        controls 
+        src={mp4}
+        style={{ width: width}} />
+
+    <p className='w-full items-center text-center justify-center text-primaryDark 
+        dark:text-primaryLight pt-2
+        font-semibold mb-10 px-24'>{caption}
+      </p>
+  </article>
+  )
+}
+
+
 export const Paragraph = ({text}) => {
     return (
       <p className='my-4 text-lg dark:text-light md:text-base'>
@@ -82,12 +99,12 @@ export const GithubProjectLink = ({github}) => {
 
 export const ProjectDark2Light = ({title, summary, img, link, github}) => {
   return (
-    <article className='"w-full flex flex-col items-center justify-center rounded-2xl
+    <article className='"w-full flex flex-col items-center justify-start rounded-2xl
     border-2 border-solid border-primaryLight bg-primaryDark
-    dark:bg-dark
+    dark:bg-dark 
     p-6 relative
     md:p-4
-    md:bg-primaryLight md:border-primaryDark md:dark:bg-light
+    md:bg-primaryLight md:border-primaryDark
     '>
       <Link href={link}
       className='w-full cursor-pointer overflow-hidden rounded-lg'
@@ -108,13 +125,16 @@ export const ProjectDark2Light = ({title, summary, img, link, github}) => {
       text-lg lg:text-base'>
         <Link href={link}
         className='text-light hover:underline underline-offset-2
-        md:text-dark'>
-          <h2 className='my-2 w-full text-left text-2xl font-bold text-light
-          lg:text-xl md:text-lg md:text-dark'>{title}</h2>
+        md:text-dark md:dark:text-light '>
+          <h2 className='my-2 w-full text-left text-2xl font-bold text-light 
+          lg:text-xl md:text-lg md:text-dark md:dark:text-light'>{title}</h2>
         </Link>
         <p className='font-medium text-light md:hidden'>{summary}</p>
-        {github}
       </div>
+      
+      <div className="w-full mt-auto">
+          {github}
+        </div>
 
     </article>
   )
@@ -122,7 +142,7 @@ export const ProjectDark2Light = ({title, summary, img, link, github}) => {
 
 export const ProjectLight2Dark = ({title, summary, img, link, github}) => {
   return (
-    <article className='"w-full flex flex-col items-center justify-center rounded-2xl
+    <article className='"w-full flex flex-col items-center justify-start rounded-2xl
     border-2 border-solid border-primaryDark bg-primaryLight 
     dark:bg-dark dark:border-primaryDark
     p-6 relative
@@ -153,8 +173,10 @@ export const ProjectLight2Dark = ({title, summary, img, link, github}) => {
           lg:text-xl md:text-lg md:text-light'>{title}</h2>
         </Link>
         <p className='font-medium text-dark dark:text-light md:hidden'>{summary}</p>
-        {github}
       </div>
+      <div className="w-full mt-auto">
+          {github}
+        </div>
 
     </article>
   )
@@ -195,7 +217,7 @@ export const ProjectGroupEvenRow = ({
 
 export const Project = ({title, summary, img, link, github}) => {
   return (
-    <article className='"w-full flex flex-col items-center justify-center rounded-2xl
+    <article className='"w-full flex flex-col items-center justify-start rounded-2xl
     border-2 border-solid border-primaryLight bg-primaryDark
     dark:bg-dark
     p-6 relative
@@ -224,8 +246,11 @@ export const Project = ({title, summary, img, link, github}) => {
           lg:text-xl md:text-lg'>{title}</h2>
         </Link>
         <p className='font-medium text-light md:hidden'>{summary}</p>
-        {github}
+        
       </div>
+      <div className="w-full mt-auto">
+          {github}
+        </div>
 
     </article>
   )
@@ -233,7 +258,7 @@ export const Project = ({title, summary, img, link, github}) => {
 
 export const ProjectLight = ({title, summary, img, link, github}) => {
   return (
-    <article className='"w-full flex flex-col items-center justify-center rounded-2xl
+    <article className='"w-full flex flex-col items-center justify-start rounded-2xl
     border-2 border-solid border-primaryDark bg-primaryLight 
     dark:bg-dark dark:border-primaryDark
     p-6 relative
@@ -262,8 +287,10 @@ export const ProjectLight = ({title, summary, img, link, github}) => {
           lg:text-xl md:text-lg'>{title}</h2>
         </Link>
         <p className='font-medium text-dark dark:text-light md:hidden'>{summary}</p>
-        {github}
       </div>
+        <div className="w-full mt-auto">
+          {github}
+        </div>
 
     </article>
   )

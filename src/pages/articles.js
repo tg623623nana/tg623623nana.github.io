@@ -120,17 +120,19 @@ const articles = () => {
             link="/Vehicle-Motion-Planning-with-Obstacles-Avoidance-using-MPC"
             summary="Solving dynamic obstacle avoidance problems based on Optimization-based Collision Avoidance (OBCA)."
           />
-          <Article 
-            title="Self-driving Navigation and Control using ROS"
-            img="/home-img4.jpg"
-            link="/"
-            summary=""
-          />
+
           <Article 
             title="IMU signal-processing anaylsis"
-            img="/home-img4.jpg"
-            link="/"
-            summary=""
+            img="/EKF/IMU_data_analysis.png"
+            link="/State-Estimation-for-Autonomous-Vehicle-Tracking-with-EKF"
+            summary="Anaylzing the method to get the clean and useful signal of a 6-axis IMU installed on the mobile robot."
+          />
+
+          <Article 
+            title="Self-driving Navigation and Control using ROS"
+            img="/mobile_robot_navigation_ROS_cover.png"
+            link="/Self-Driving-Navigation-and-Control-Using-ROS"
+            summary="Control the self-driving robot to complete the navigation problem smoothly."
           />
           
         </ul>

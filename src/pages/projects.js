@@ -90,38 +90,39 @@ const projects = () => {
         github1={<GithubProjectLinkL2D github="/"/>}
 
         title2="Autonomous Car Racing using Steering Control"
-        summary2="Solving dynamic obstacle avoidance problems based on Optimization-based Collision Avoidance (OBCA)."
+        summary2="Implemented steering control and MPC on a autonomous racing car BARC."
         img2="/BARC_raceline.jpg"
-        link2="/"
+        link2="/Autonomous-Car-Racing-using-Steering-Control"
         github2=""
         />
 
         <ProjectGroupOdd
         title1="Locomotion Controller of A1 Quadrupedal Robot using MPC"
-        summary1="Locomotion Controller of A1 Quadrupedal Robot using MPC"
+        summary1="Designed the locomotion controller of A1 Quadrupedal Robot using linear MPC to control the robot to walk stably."
         img1="/Locomotion_Control_img1.png"
-        link1="/"
+        link1="/Locomotion-Controller-of-A1-Quadrupedal-Robot-using-MPC"
         github1=""
 
         title2="Balance Controller of Agility Robotics’ Cassie"
-        summary2="Balance Controller of Agility Robotics’ Cassie"
-        img2="/Cassie_img1.png"
-        link2="/"
+        summary2="Implemented a controller that can balance the Cassie in quite stance and against the disturbance."
+        img2="/Cassie/Cassie_cover.png"
+        link2="/Balance-Controller-of-Agility-Robotics-Cassie"
         github2=""
         />    
 
 
         <ProjectGroupEvenRow
         title1="Automated Cell Analyzer using OpenCV and Deep Learning"
-        summary1="Automated Cell Analyzer using OpenCV and Deep Learning"
-        img1="/AutoCell_img1.png"
-        link1="/"
+        summary1="Designed a 2D cell image recognition algorithm and built a human-robot-interface."
+        img1="/AutoCell/AutoCell_interface.png"
+        link1="/Automated-Cell-Analyzer-using-OpenCV-and-Deep-Learning
+        "
         github1={<GithubProjectLink github=""/>}
 
         title2="Compensator Design for DC Motor using PID Control"
-        summary2="Compensator Design for DC Motor using PID Control"
-        img2="/Motor_control_img1.png"
-        link2="/"
+        summary2="Design controller for position control of steppor motor."
+        img2="/StepporMotor/Motor_control_img1.png"
+        link2="/Compensator-Design-for-DC-Motor-using-PID-Control"
         github2=""
         /> 
         </Layout>
