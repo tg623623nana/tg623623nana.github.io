@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Experience from '@/app/components/Experience'
 import TransitionEffect from '@/app/components/TransitionEffect'
 import Head from 'next/head'
+import Skills from '@/app/components/Skills'
 
 const about = () => {
     return (
@@ -75,7 +76,7 @@ const about = () => {
                 </div>
                 
             </div>
-
+            <Skills />
             <Experience />
         </Layout>
     </main>

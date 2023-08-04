@@ -44,9 +44,9 @@ const Experience = () => {
     ) 
 
     return (
-        <div className='my-20'>
+        <div className='my-4'>
             <h2 className='font-bold text-6xl mb-20 w-full text-center 
-            xl:text-5xl  lg:text-7xl md:text-5xl sm:text-4xl
+            xl:text-5xl  lg:text-5xl sm:text-4xl
             md:mb-10'>
             Experience
             </h2>
