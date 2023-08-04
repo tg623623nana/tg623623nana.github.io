@@ -57,10 +57,11 @@ const about = () => {
                 dark:border-light
                 lg:col-span-6
                 lg:order-1
-                lg:my-10
+                lg:my-0
+                lg:w-[50%] lg:ml-auto lg:mr-auto lg:mb-0
                 '>
                     <div className='px-2 py-2 rounded-[2rem] bg-light
-                    dark:bg-dark
+                    dark:bg-dark 
                     '>
                     <Image
                         className="w-full h-auto rounded-lg"
