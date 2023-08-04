@@ -3,6 +3,9 @@ import Link from 'next/link'
 import Layout from '@/app/components/Layout'
 import AnimatedText from '@/app/components/AnimatedText'
 import { SingleImg, Paragraph, GithubProjectLink, TwoImg, VedioMP4 } from '../app/components/ArticleLayOut'
+import ReactPlayer from 'react-player'
+import YoutubeEmbed from '../app/components/YoutubeEmbed'
+import YouTubePlayer from 'react-player/youtube'
 
 const ArticleTemplate = () => {
     return (
@@ -15,14 +18,9 @@ const ArticleTemplate = () => {
 
             <h2 className='text-2xl font-bold mt-10 mb-10 dark:text-light
             md:text-xl'>Demo in ROS</h2>
-
-
-            <SingleImg
-              img="/mobile_robot_navigation_ROS_img.png"
-              width="800"
-              caption="Mobile Robot Navigation in ROS"
-              />
             
+            <YoutubeEmbed embedId='KD7vV7YJL1U'/>
+
           </div>
         </Layout>
       </main>
