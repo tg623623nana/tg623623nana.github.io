@@ -84,7 +84,7 @@ const Experience = () => {
                         address="NTPC, Taiwan"
                         work={<ul style={{listStyleType: "square"}} className="px-6">
                             <li className='my-2 font-medium'>Prepared academic material on Classical Control and Numerical Analysis.</li>
-                            <li className='my-2 font-medium'>B.S. in Mechanical Engineering, 2021</li>
+                            <li className='my-2 font-medium'>	Planned assignments, held weekly TA sessions after class, graded papers and exams.</li>
                         </ul>}
                     />
                 </ul>
