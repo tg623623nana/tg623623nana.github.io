@@ -49,7 +49,7 @@ const LocomotionControllerOfA1QuadrupedalRobotUsingMPC = () => {
             <Paragraph 
             text="Used python to simulate the performance of the controller."/>
 
-            <VedioMP4
+            {/* <VedioMP4
             mp4='/Quadrupedal/quadrupedal_walking.mp4'
             width='100vw'
             caption='A1 walking demo'
@@ -103,7 +103,7 @@ Unstructured Terrains," in IEEE Robotics and Automation Letters, vol. 2, no. 2, 
 10.1109/LRA.2016.2638036
                 </li>
 
-                {/* <li className='py-2'>
+                <li className='py-2'>
                     Fast and Efficient Locomotion via Learned Gait Transitions 
                     <Link href="https://github.com/yxyang/fast_and_efficient" target='_blank'
                     className='hover:underline underline-offset-2 text-primary font-bold text-xs'>
@@ -117,8 +117,8 @@ Unstructured Terrains," in IEEE Robotics and Automation Letters, vol. 2, no. 2, 
                     className='hover:underline underline-offset-2 text-primary font-bold text-xs'>
                         &nbsp;Vist Website &rarr;
                         </Link>
-                </li> */}
-            </ul>
+                </li>
+            </ul> */}
           </div>
         </Layout>
       </main>
