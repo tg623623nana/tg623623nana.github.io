@@ -103,11 +103,11 @@ Unstructured Terrains," in IEEE Robotics and Automation Letters, vol. 2, no. 2, 
 10.1109/LRA.2016.2638036
                 </li>
 
-                <li className='py-2'>
+                {/* <li className='py-2'>
                     Fast and Efficient Locomotion via Learned Gait Transitions 
                     <Link href="https://github.com/yxyang/fast_and_efficient" target='_blank'
                     className='hover:underline underline-offset-2 text-primary font-bold text-xs'>
-                        &nbsp;Vist Website
+                        &nbsp;Vist Website &rarr;
                         </Link>
                 </li>
 
@@ -115,9 +115,9 @@ Unstructured Terrains," in IEEE Robotics and Automation Letters, vol. 2, no. 2, 
                 Motion Imitation
                     <Link href="https://github.com/erwincoumans/motion_imitation/tree/master/mpc_controller" target='_blank'
                     className='hover:underline underline-offset-2 text-primary font-bold text-xs'>
-                        &nbsp;Vist Website
+                        &nbsp;Vist Website &rarr;
                         </Link>
-                </li>
+                </li> */}
             </ul>
           </div>
         </Layout>
