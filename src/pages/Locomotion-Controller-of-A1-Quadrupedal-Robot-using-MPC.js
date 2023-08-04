@@ -49,13 +49,13 @@ const LocomotionControllerOfA1QuadrupedalRobotUsingMPC = () => {
             <Paragraph 
             text="Used python to simulate the performance of the controller."/>
 
-            {/* <VedioMP4
+            <VedioMP4
             mp4='/Quadrupedal/quadrupedal_walking.mp4'
             width='100vw'
             caption='A1 walking demo'
             />
 
-            <Paragraph 
+            {/* <Paragraph 
             text="To check the stability of the controller, I tested a strategy that the x-axis velocity reference will increase when the robot finds that it is walking too slowly, and the controller handles the changing of the velocity from 0.5 to 2.0 pretty well!."/>
 
             <VedioMP4
