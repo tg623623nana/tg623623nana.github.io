@@ -77,11 +77,11 @@ const LocomotionControllerOfA1QuadrupedalRobotUsingMPC = () => {
             <ul 
             style={{listStyleType: "decimal"}} className='px-10 text-base dark:text-light md:!text-sm text-dark/75
             dark:text-light/75'>
-                {/* <li className='py-2'>
+                <li className='py-2'>
                     J. Di Carlo, P. M. Wensing, B. Katz, G. Bledt, and S. Kim, “Dynamic locomotion in the mit cheetah 3 through convex model-predictive control,” in 2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). IEEE, 2018, pp. 1–9
                 </li>
 
-                <li className='py-2'>
+                {/* <li className='py-2'>
                     D. Kim, J. Di Carlo, B. Katz, G. Bledt, and S. Kim, “Highly dynamic quadruped locomotion via whole-body impulse
 control and model predictive control,” arXiv preprint arXiv:1909.06586, 2019
                 </li>
