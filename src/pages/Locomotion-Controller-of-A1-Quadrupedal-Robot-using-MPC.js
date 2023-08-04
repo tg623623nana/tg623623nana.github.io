@@ -21,7 +21,7 @@ const LocomotionControllerOfA1QuadrupedalRobotUsingMPC = () => {
             text="First defined the gait pattern for walking and used a gait scheduler to generate the reference trajectory. The reference trajectory includes COM positon, velocity, angular velocity and euler angle. To follow the preplanned treajectory, we need two different controllers for the stance legs and the swing legs." />
 
             <ul 
-            style={{listStyleType: "disc"}} className="px-10 text-lg dark:text-light md:text-base">
+            style={{listStyleType: "disc"}} className='px-10 text-lg dark:text-light md:text-base'>
                 <li className='py-2'>
                     <b className='text-primary dark:text-primaryBlueLight'>
                         Stance legs : Linear MPC controller</b>
@@ -50,33 +50,33 @@ const LocomotionControllerOfA1QuadrupedalRobotUsingMPC = () => {
             text="Used python to simulate the performance of the controller."/>
 
             <VedioMP4
-            mp4="/Quadrupedal/quadrupedal_walking.mp4"
-            width="100vw"
-            caption="A1 walking demo"
+            mp4='/Quadrupedal/quadrupedal_walking.mp4'
+            width='100vw'
+            caption='A1 walking demo'
             />
 
             <Paragraph 
             text="To check the stability of the controller, I tested a strategy that the x-axis velocity reference will increase when the robot finds that it is walking too slowly, and the controller handles the changing of the velocity from 0.5 to 2.0 pretty well!."/>
 
             <VedioMP4
-            mp4="/Quadrupedal/quadrupedal_walking_changeSpeed.mp4"
-            width="100vw"
-            caption="Change Speed while walking"
+            mp4='/Quadrupedal/quadrupedal_walking_changeSpeed.mp4'
+            width='100vw'
+            caption='Change Speed while walking'
             />
 
             <TwoImg
-                img1="/Quadrupedal/slow_to_fast_velocity.png"
-                img2="/Quadrupedal/slow_to_fast_torque.png"
-                width="800"
-                caption="x-axis velocity & rear left calf pitch torque V.s time"
+                img1='/Quadrupedal/slow_to_fast_velocity.png'
+                img2='/Quadrupedal/slow_to_fast_torque.png'
+                width='800'
+                caption='x-axis velocity & rear left calf pitch torque V.s time'
             />
 
             <h2 className='text-2xl font-bold mt-10 dark:text-light
             md:text-xl'>Reference</h2>
 
             <ul 
-            style={{listStyleType: "decimal"}} className="px-10 text-base dark:text-light md:!text-sm text-dark/75
-            dark:text-light/75">
+            style={{listStyleType: "decimal"}} className='px-10 text-base dark:text-light md:!text-sm text-dark/75
+            dark:text-light/75'>
                 <li className='py-2'>
                     J. Di Carlo, P. M. Wensing, B. Katz, G. Bledt, and S. Kim, “Dynamic locomotion in the mit cheetah 3 through convex model-predictive control,” in 2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). IEEE, 2018, pp. 1–9
                 </li>
