@@ -147,7 +147,8 @@ export const ProjectLight2Dark = ({title, summary, img, link, github}) => {
     dark:bg-dark dark:border-primaryDark
     p-6 relative
     md:p-3
-    md:bg-primaryDark md:border-primaryLight md:dark:bg-dark'>
+    md:bg-primaryDark md:border-primaryLight md:dark:bg-dark
+    md:dark:border-primaryLight'>
       <Link href={link}
       className='w-full cursor-pointer overflow-hidden rounded-lg'
       >
