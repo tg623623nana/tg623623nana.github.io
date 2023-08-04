@@ -78,36 +78,30 @@ const LocomotionControllerOfA1QuadrupedalRobotUsingMPC = () => {
             style={{listStyleType: "decimal"}} className='px-10 text-base dark:text-light md:!text-sm text-dark/75
             dark:text-light/75'>
                 <li className='py-2'>
-                    J. Di Carlo, P. M. Wensing, B. Katz, G. Bledt, and S. Kim, “Dynamic locomotion in the mit cheetah 3 through convex model-predictive control,” in 2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). IEEE, 2018, pp. 1–9
-                </li>
-
-                {/* <li className='py-2'>
-                    D. Kim, J. Di Carlo, B. Katz, G. Bledt, and S. Kim, “Highly dynamic quadruped locomotion via whole-body impulse
-control and model predictive control,” arXiv preprint arXiv:1909.06586, 2019
+                    J. Di Carlo, P. M. Wensing, B. Katz, G. Bledt, and S. Kim, Dynamic locomotion in the mit cheetah 3 through convex model-predictive control, in 2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). IEEE, 2018, pp. 1–9
                 </li>
 
                 <li className='py-2'>
-                    Bledt, G., Wensing, P. M., Ingersoll, S., & Kim, S. (Year). Contact Model Fusion for Event-Based Locomotion in
-Unstructured Terrains. IEEE Transactions on Robotics, 37(3), 736-749
+                    D. Kim, J. Di Carlo, B. Katz, G. Bledt, and S. Kim, Highly dynamic quadruped locomotion via whole-body impulse control and model predictive control, arXiv preprint arXiv:1909.06586, 2019
                 </li>
 
                 <li className='py-2'>
-                    H. Park, S. Kim, M. DiCicco and S. Kim, "High speed trot-running: Implementation of a hierarchical controller
-using proprioceptive impedance control on the MIT Cheetah," IEEE Robotics and Automation Letters, vol. 3, no.
-3, pp. 2346-2353, 2018, doi: 10.1109/LRA.2018.2802445
+                    Bledt, G., Wensing, P. M., Ingersoll, S., & Kim, S. (Year). Contact Model Fusion for Event-Based Locomotion in Unstructured Terrains. IEEE Transactions on Robotics, 37(3), 736-749
                 </li>
 
                 <li className='py-2'>
-                    P. M. Wensing, G. Bledt, S. Ingersoll and S. Kim, "Contact Model Fusion for Event-Based Locomotion in
-Unstructured Terrains," in IEEE Robotics and Automation Letters, vol. 2, no. 2, pp. 916-923, April 2017, doi:
-10.1109/LRA.2016.2638036
+                    H. Park, S. Kim, M. DiCicco and S. Kim, High speed trot-running: Implementation of a hierarchical controller using proprioceptive impedance control on the MIT Cheetah, IEEE Robotics and Automation Letters, vol. 3, no.3, pp. 2346-2353, 2018, doi: 10.1109/LRA.2018.2802445
+                </li>
+
+                <li className='py-2'>
+                    P. M. Wensing, G. Bledt, S. Ingersoll and S. Kim, Contact Model Fusion for Event-Based Locomotion in Unstructured Terrains, in IEEE Robotics and Automation Letters, vol. 2, no. 2, pp. 916-923, April 2017, doi:10.1109/LRA.2016.2638036
                 </li>
 
                 <li className='py-2'>
                     Fast and Efficient Locomotion via Learned Gait Transitions 
                     <Link href="https://github.com/yxyang/fast_and_efficient" target='_blank'
                     className='hover:underline underline-offset-2 text-primary font-bold text-xs'>
-                        &nbsp;Vist Website &rarr;
+                        &nbsp;[Vist Website &rarr;]
                         </Link>
                 </li>
 
@@ -115,9 +109,9 @@ Unstructured Terrains," in IEEE Robotics and Automation Letters, vol. 2, no. 2, 
                 Motion Imitation
                     <Link href="https://github.com/erwincoumans/motion_imitation/tree/master/mpc_controller" target='_blank'
                     className='hover:underline underline-offset-2 text-primary font-bold text-xs'>
-                        &nbsp;Vist Website &rarr;
+                        &nbsp;[Vist Website &rarr;]
                         </Link> 
-                </li>*/}
+                </li>
             </ul>
           </div>
         </Layout>
